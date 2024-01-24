@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\fanghaitao\.android\build-cache\076209ab2edb213a86ca2bc716d5a598f10e4061\output\jars\libs\MIO_SDK_UNITY_1.3.9_10156.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="29.0.3"
+        sha1="36d62f6d697622df4e997531cbb4491e844a011c">
+        <dex dex="D:\codeProgram\qqdz\myqqdzUnity\Temp\gradleOut\build\intermediates\pre-dexed\release\MIO_SDK_UNITY_1.3.9_10156_1173c5a9be72f72dbd1a26ec6dc30a5ce1207c5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\codeProgram\qqdz\myqqdzUnity\Temp\gradleOut\libs\unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="29.0.3"
+        sha1="db5ee0e43530a7fb241af8cdcd7e6c5bf216babe">
+        <dex dex="D:\codeProgram\qqdz\myqqdzUnity\Temp\gradleOut\build\intermediates\pre-dexed\debug\unity-classes_e2472d69e7521b94ee40c9750d40eb2d3bde10cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\fanghaitao\.android\build-cache\076209ab2edb213a86ca2bc716d5a598f10e4061\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="29.0.3"
+        sha1="c152a3dffb906c0d318bd6d9781d52728968110c">
+        <dex dex="D:\codeProgram\qqdz\myqqdzUnity\Temp\gradleOut\build\intermediates\pre-dexed\release\classes_9b8f81a9a7b896b9f49982192ee6ff698909419c.jar" />
+    </item>
+
+</items>

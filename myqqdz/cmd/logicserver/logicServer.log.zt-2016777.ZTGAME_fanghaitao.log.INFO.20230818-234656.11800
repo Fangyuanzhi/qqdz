@@ -1,0 +1,21 @@
+Log file created at: 2023/08/18 23:46:56
+Running on machine: zt-2016777
+Binary: Built with gc go1.17.13 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0818 23:46:56.503272   11800 playhandle.go:74] [conn]192.168.96.207:55130operator:"login"  user:{name:"fht"  passwd:"123456"}
+I0818 23:47:24.351038   11800 playhandle.go:74] [conn]192.168.96.207:55130operator:"meta"  token:"vp057r482W1zMQ5J"  user:{name:"fht"  id:1002}
+E0818 23:47:24.572503   11800 rpc.go:33] id:1294  addr:"192.168.96.207:7001"  waitNum:1  startTime:1692373644  userList:{name:"fht"  id:1002}
+E0818 23:47:35.048410   11800 team.go:112] 开启房间返回 room: msg:"匹配成功"  room:{id:1294  addr:"192.168.96.207:7001"  waitNum:1  startTime:1692373644  userList:{name:"fht"  id:1002}}
+I0818 23:47:38.698283   11800 playhandle.go:74] [conn]192.168.96.207:55172operator:"login"  user:{name:"fht"  passwd:"123456"}
+I0818 23:47:40.537937   11800 playhandle.go:74] [conn]192.168.96.207:55177operator:"login"  user:{name:"fht"  passwd:"123456"}
+I0818 23:47:40.605904   11800 playhandle.go:74] [conn]192.168.96.207:55181operator:"login"  user:{name:"fht"  passwd:"123456"}
+I0818 23:47:40.638983   11800 playhandle.go:74] [conn]192.168.96.207:55185operator:"login"  user:{name:"fht"  passwd:"123456"}
+I0818 23:47:40.654815   11800 playhandle.go:74] [conn]192.168.96.207:55189operator:"login"  user:{name:"fht"  passwd:"123456"}
+I0818 23:47:40.694264   11800 playhandle.go:74] [conn]192.168.96.207:55193operator:"login"  user:{name:"fht"  passwd:"123456"}
+E0818 23:51:19.500318   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.525277   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.555453   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.556456   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.556456   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.601842   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:52:40.683485   11800 playhandle.go:67] read from client failed, err:EOF

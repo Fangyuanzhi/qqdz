@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{37ECD8FD-0A77-F997-FBAD-5F18F84AB61C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_3;UNITY_2017_4;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Google.Protobuf\ByteArray.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\ByteString.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\CodedInputStream.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\CodedOutputStream.ComputeSize.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\CodedOutputStream.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Collections\Lists.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Collections\MapField.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Collections\ProtobufEqualityComparers.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Collections\ReadOnlyDictionary.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Collections\RepeatedField.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Compatibility\MethodInfoExtensions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Compatibility\PropertyInfoExtensions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Compatibility\StreamExtensions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Compatibility\TypeExtensions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\FieldCodec.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\FieldMaskTree.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\FrameworkPortability.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\ICustomDiagnosticMessage.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\IDeepCloneable.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\IMessage.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\InvalidJsonException.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\InvalidProtocolBufferException.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\JsonFormatter.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\JsonParser.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\JsonToken.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\JsonTokenizer.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\LimitedInputStream.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\MessageExtensions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\MessageParser.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\obj\Debug\net45\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\obj\Debug\netstandard1.0\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\obj\Release\net45\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\obj\Release\netstandard1.0\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\ProtoPreconditions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\CustomOptions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\Descriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\DescriptorBase.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\DescriptorDeclaration.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\DescriptorPool.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\DescriptorUtil.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\DescriptorValidationException.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\EnumDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\EnumValueDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\FieldAccessorBase.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\FieldDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\FieldType.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\FileDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\GeneratedClrTypeInfo.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\IDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\IFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\MapFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\MessageDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\MethodDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\OneofAccessor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\OneofDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\OriginalNameAttribute.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\PackageDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\ReflectionUtil.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\RepeatedFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\ServiceDescriptor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\SingleFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\Reflection\TypeRegistry.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\UnknownField.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\UnknownFieldSet.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Any.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\AnyPartial.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Api.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Duration.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\DurationPartial.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Empty.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\FieldMask.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\FieldMaskPartial.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\SourceContext.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Struct.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\TimeExtensions.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Timestamp.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\TimestampPartial.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Type.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\ValuePartial.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\Wrappers.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WellKnownTypes\WrappersPartial.cs" />
+     <Compile Include="Assets\Plugins\Google.Protobuf\WireFormat.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\AddressBook\AddPerson.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\AddressBook\Addressbook.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\AddressBook\ListPeople.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\AddressBook\obj\Debug\netcoreapp1.0\AddressBook.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\AddressBook\obj\Release\netcoreapp1.0\AddressBook.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\AddressBook\Program.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\AddressBook\SampleUsage.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Conformance\Conformance.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Conformance\obj\Debug\netcoreapp1.0\Google.Protobuf.Conformance.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Conformance\obj\Release\netcoreapp1.0\Google.Protobuf.Conformance.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Conformance\Program.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.JsonDump\obj\Debug\netcoreapp1.0\Google.Protobuf.JsonDump.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.JsonDump\obj\Release\netcoreapp1.0\Google.Protobuf.JsonDump.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.JsonDump\Program.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\ByteStringTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\CodedInputStreamExtensions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\CodedInputStreamTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\CodedOutputStreamTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Collections\MapFieldTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Collections\ProtobufEqualityComparersTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Collections\RepeatedFieldTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Compatibility\PropertyInfoExtensionsTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Compatibility\StreamExtensionsTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Compatibility\TypeExtensionsTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\DeprecatedMemberTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\EqualityTester.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\FieldCodecTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\FieldMaskTreeTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\GeneratedMessageTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\IssuesTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\JsonFormatterTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\JsonParserTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\JsonTokenizerTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\obj\Debug\net451\Google.Protobuf.Test.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\obj\Debug\netcoreapp1.0\Google.Protobuf.Test.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\obj\Debug\netcoreapp1.0\Google.Protobuf.Test.Program.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\obj\Release\net451\Google.Protobuf.Test.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\obj\Release\netcoreapp1.0\Google.Protobuf.Test.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\obj\Release\netcoreapp1.0\Google.Protobuf.Test.Program.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Reflection\CustomOptionsTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Reflection\DescriptorDeclarationTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Reflection\DescriptorsTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Reflection\FieldAccessTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\Reflection\TypeRegistryTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\SampleEnum.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\SampleMessages.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\SampleNaNs.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestCornerCases.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\ForeignMessagePartial.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\MapUnittestProto3.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\TestMessagesProto3.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\UnittestCustomOptionsProto3.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\UnittestImportProto3.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\UnittestImportPublicProto3.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\UnittestIssues.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\UnittestProto3.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\TestProtos\UnittestWellKnownTypes.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\UnknownFieldSetTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\WellKnownTypes\AnyTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\WellKnownTypes\DurationTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\WellKnownTypes\FieldMaskTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\WellKnownTypes\TimestampTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf.Test\WellKnownTypes\WrappersTest.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\ByteArray.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\ByteString.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\CodedInputStream.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\CodedOutputStream.ComputeSize.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\CodedOutputStream.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Collections\Lists.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Collections\MapField.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Collections\ProtobufEqualityComparers.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Collections\ReadOnlyDictionary.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Collections\RepeatedField.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Compatibility\MethodInfoExtensions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Compatibility\PropertyInfoExtensions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Compatibility\StreamExtensions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Compatibility\TypeExtensions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\FieldCodec.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\FieldMaskTree.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\FrameworkPortability.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\ICustomDiagnosticMessage.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\IDeepCloneable.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\IMessage.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\InvalidJsonException.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\InvalidProtocolBufferException.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\JsonFormatter.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\JsonParser.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\JsonToken.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\JsonTokenizer.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\LimitedInputStream.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\MessageExtensions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\MessageParser.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\obj\Debug\net45\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\obj\Debug\netstandard1.0\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\obj\Release\net45\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\obj\Release\netstandard1.0\Google.Protobuf.AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Properties\AssemblyInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\ProtoPreconditions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\CustomOptions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\Descriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\DescriptorBase.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\DescriptorDeclaration.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\DescriptorPool.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\DescriptorUtil.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\DescriptorValidationException.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\EnumDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\EnumValueDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\FieldAccessorBase.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\FieldDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\FieldType.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\FileDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\GeneratedClrTypeInfo.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\IDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\IFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\MapFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\MessageDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\MethodDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\OneofAccessor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\OneofDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\OriginalNameAttribute.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\PackageDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\ReflectionUtil.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\RepeatedFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\ServiceDescriptor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\SingleFieldAccessor.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\Reflection\TypeRegistry.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\UnknownField.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\UnknownFieldSet.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Any.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\AnyPartial.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Api.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Duration.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\DurationPartial.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Empty.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\FieldMask.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\FieldMaskPartial.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\SourceContext.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Struct.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\TimeExtensions.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Timestamp.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\TimestampPartial.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Type.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\ValuePartial.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\Wrappers.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WellKnownTypes\WrappersPartial.cs" />
+     <Compile Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\src\Google.Protobuf\WireFormat.cs" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\src\google\protobuf\testdata\text_format_unittest_data_oneof_implemented.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_python.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_python_cpp.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_csharp.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_objc.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_java.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\third_party\googletest\googletest\CMakeLists.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\third_party\googletest\googletest\test\gtest_output_test_golden_lin.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\examples\CMakeLists.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_php_c.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\src\google\protobuf\testdata\text_format_unittest_data_pointy.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\CHANGES.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\third_party\googletest\CMakeLists.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\CONTRIBUTORS.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_js.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\editors\README.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\src\google\protobuf\testdata\text_format_unittest_extensions_data_pointy.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\src\google\protobuf\testdata\text_format_unittest_data_pointy_oneof.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\third_party\googletest\googlemock\test\gmock_output_test_golden.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\cmake\CMakeLists.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\src\google\protobuf\testdata\text_format_unittest_extensions_data.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\src\google\protobuf\testdata\map_test_data.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\csharp\CHANGES.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\third_party\googletest\googlemock\CMakeLists.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_cpp.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_php.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\src\google\protobuf\testdata\text_format_unittest_data.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_ruby.txt" />
+     <None Include="Assets\Plugins\protobuf-csharp-3.7.0\protobuf-3.7.0\conformance\failure_list_python-post26.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Users/fanghaitao/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>C:/Users/fanghaitao/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>C:/Users/fanghaitao/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

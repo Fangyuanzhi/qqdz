@@ -1,0 +1,6 @@
+Log file created at: 2023/08/18 23:29:52
+Running on machine: zt-2016777
+Binary: Built with gc go1.17.13 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0818 23:29:52.730396   27796 roommanage.go:94] [register] 192.168.96.207:7001 已经注册
+E0818 23:47:24.496131   27796 rpc.go:36] id:1294  addr:"192.168.96.207:7001"  waitNum:1  startTime:1692373644  userList:{name:"fht"  id:1002}

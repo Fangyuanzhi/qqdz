@@ -1,0 +1,13 @@
+Log file created at: 2023/08/18 23:47:24
+Running on machine: zt-2016777
+Binary: Built with gc go1.17.13 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0818 23:47:24.572503   11800 rpc.go:33] id:1294  addr:"192.168.96.207:7001"  waitNum:1  startTime:1692373644  userList:{name:"fht"  id:1002}
+E0818 23:47:35.048410   11800 team.go:112] 开启房间返回 room: msg:"匹配成功"  room:{id:1294  addr:"192.168.96.207:7001"  waitNum:1  startTime:1692373644  userList:{name:"fht"  id:1002}}
+E0818 23:51:19.500318   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.525277   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.555453   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.556456   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.556456   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:51:19.601842   11800 playhandle.go:67] read from client failed, err:EOF
+E0818 23:52:40.683485   11800 playhandle.go:67] read from client failed, err:EOF

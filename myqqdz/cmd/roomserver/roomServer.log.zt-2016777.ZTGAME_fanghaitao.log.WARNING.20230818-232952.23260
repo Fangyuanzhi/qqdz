@@ -1,0 +1,32 @@
+Log file created at: 2023/08/18 23:29:52
+Running on machine: zt-2016777
+Binary: Built with gc go1.17.13 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+E0818 23:29:52.733150   23260 rpc.go:69] msg:"注册完成"
+E0818 23:47:35.447789   23260 playerhandle.go:42] <nil> name:"图样"  id:1002  skinId:1  color:{r:33  g:155  b:176  a:215}
+E0818 23:47:35.458758   23260 graph.go:137] [time] 1692373655458
+E0818 23:47:35.459757   23260 room.go:34] [player] 1002 2图样
+E0818 23:47:35.460799   23260 robot.go:44] [robot]10 4002狂暴之力
+E0818 23:47:35.460799   23260 robot.go:44] [robot]11 4003十一
+E0818 23:47:35.461751   23260 robot.go:44] [robot]12 4004疯狂小队
+E0818 23:47:35.461751   23260 robot.go:44] [robot]13 4005胜利在望
+E0818 23:47:35.461751   23260 robot.go:44] [robot]14 4006寂寞
+E0818 23:47:35.461751   23260 robot.go:44] [robot]15 4008无敌战神
+E0818 23:47:35.461751   23260 robot.go:44] [robot]16 4009独孤求败
+E0818 23:47:35.462748   23260 robot.go:44] [robot]17 4010顶尖高手
+E0818 23:47:35.462748   23260 robot.go:44] [robot]18 4011压力山大
+E0818 23:47:35.462748   23260 robot.go:44] [robot]19 4013神秘战士
+E0818 23:47:35.462748   23260 robot.go:44] [robot]20 4014疯狂杀戮者
+E0818 23:47:35.463748   23260 robot.go:44] [robot]21 4015战无不胜
+E0818 23:47:35.463748   23260 robot.go:44] [robot]22 4016爱丽丝
+E0818 23:47:35.463748   23260 robot.go:44] [robot]23 4018荣耀王者
+E0818 23:47:35.463748   23260 robot.go:44] [robot]24 4019无限嚣张
+E0818 23:47:35.463748   23260 robot.go:44] [robot]25 4021勇者无畏
+E0818 23:47:35.464742   23260 robot.go:44] [robot]26 4022伍六七
+E0818 23:47:35.464742   23260 robot.go:44] [robot]27 4023神级法师
+E0818 23:47:35.464742   23260 robot.go:44] [robot]28 4024神级战士
+E0818 23:47:35.464742   23260 robot.go:50] [robot] 19 19
+E0818 23:47:35.510185   23260 room.go:141] msg:"注册完成"
+E0818 23:47:35.743501   23260 playerhandle.go:42] moveX:0.70710677  moveY:0.70710677  moveS:1 name:"图样"  id:1002  skinId:1  color:{r:33  g:155  b:176  a:215}
+E0818 23:47:36.887596   23260 playerhandle.go:42] moveX:0.7071068  moveY:0.7071068  moveS:1 name:"图样"  id:1002  skinId:1  color:{r:33  g:155  b:176  a:215}
+E0818 23:47:36.888594   23260 playerhandle.go:369] -----开始结算--------

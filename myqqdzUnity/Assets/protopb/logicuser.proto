@@ -1,0 +1,163 @@
+syntax = "proto3";
+package logicProto;
+
+option csharp_namespace = "logicProto";
+
+// 用户相关
+message User{
+  string name = 1;
+  uint64 id=2;
+  string passwd = 3;
+  string rePasswd = 4;
+  uint32 skinId=5;
+  Color color =6;
+}
+
+message UserInfo{
+  string name =1;
+  string token=2;
+  uint64 id=3;
+  int32 level=4;
+  int32 experience=5;
+}
+
+// 请求和放回
+message Operator{
+  string operator = 1;
+  string token =2;
+  User user = 3;
+  Room room = 4;
+  Act act=6;
+}
+
+message RequestRoom{
+  string op=1;    // "register'、 "update"、 "logoff"、
+  Room room=2;    // 房间信息
+}
+
+message ResponseRoom{
+  int32 status = 1;
+  string msg = 2;
+  Room room=3;    // 房间信息
+}
+
+message Response{
+  int32 status = 1;
+  string msg = 2;
+  UserInfo userinfo = 3;
+  Room room=4;
+  repeated User UserList = 5;
+}
+
+message InitResponse{
+  int32 status = 1;
+  int32 size =2;
+  string msg = 3;
+  Ball player =4;
+  repeated Ball quark=5;
+}
+
+message UpdateResponse{
+  int32 status = 1;
+  string msg = 2;
+  repeated Ball players =3;
+  repeated Ball foods=4;
+  repeated Ball spore=5;
+  CameraPos camPos=6;
+  UserInfo user=7;
+  Top top=8;
+}
+
+message Room{
+  uint64 id = 1;
+  string addr =2;
+  int32 playNum=3;
+  int32 waitNum=4;
+  int32 robotNum=5;
+  int64 startTime=6;
+  float width=7;
+  float height=8;
+  repeated User userList=9;
+}
+
+message Act{
+   int32 type=1;          // 操作类型 吐袍子，分身
+   float moveX=2;      // 方向x
+   float moveY=3;      // 方向y
+   float moveS=4;      // 速度s
+}
+
+message  Ball{
+  float x=1;
+  float y=2;
+  float nx=3;
+  float ny=4;
+  float score=5;
+  uint32 type=6;
+  uint32 id=7;     //  unity实例的唯一id
+  float moveX=8;
+  float moveY=9;
+  float moveS=10;
+  int64 createTime=11;
+  uint64 uid=12;  // 玩家的唯一id
+  string name=13;
+  uint32 skinId=14; // 皮肤id
+  Color color=15;   // 颜色
+}
+
+message CameraPos{
+  float  x=1;
+  float  y=2;
+  float  nx=3;
+  float  ny=4;
+  float  sx=5;
+  float  sy=6;
+  float  nsx=7;
+  float  nsy=8;
+  float  score=9;  //当前玩家分数
+  uint32 id=10;     // 主球id
+  int64  curtime=11;
+}
+
+message Coordinate{
+  float  x=1;
+  float  y=2;
+  float  z=3;
+}
+
+message Pair{
+  uint64 key=1;
+  string name=2;
+  float val=3;
+}
+
+message Color{
+  uint32 r=1;
+  uint32 g=2;
+  uint32 b=3;
+  uint32 a=4;
+}
+
+message Top{
+  int32 myTop=1;
+  repeated Pair pair=2;
+}
+
+service Meta{
+  rpc GetRoom(UserList) returns (Room){}    // logic获取匹配的房间
+  rpc NotifyRoom(RoomList) returns (Res){}  // roomServer推送当前房间的运行信息
+}
+
+message UserList{
+  uint32 num=1;
+  repeated User userList=2;
+}
+
+message RoomList{
+  repeated Room roomList=1;
+}
+
+message Res{
+  int32 status=1;
+  string msg=2;
+}
