@@ -6,4 +6,4 @@
 # 客户端
   myqqdzUnity
   使用unity开发，使用的状态同步
-  https://github.com/Fangyuanzhi/qqdz/blob/main/login.jpg
+  login.jpg
