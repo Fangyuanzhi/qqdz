@@ -6,4 +6,5 @@
 # 客户端
   myqqdzUnity
   使用unity开发，使用的状态同步
-  login.jpg
+
+[login.jpg]
