@@ -7,4 +7,4 @@
   myqqdzUnity
   使用unity开发，使用的状态同步
 
-[login.jpg]
+[[login.jpg](https://github.com/Fangyuanzhi/qqdz/blob/f2c2db1e1577c9529e3f7d2bc76306edf9398378/login.jpg)https://github.com/Fangyuanzhi/qqdz/blob/f2c2db1e1577c9529e3f7d2bc76306edf9398378/login.jpg]
